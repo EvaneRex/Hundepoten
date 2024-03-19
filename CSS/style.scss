@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ /*Header og nav styling*/
 header{
     position: sticky;
     top: 0;
@@ -29,6 +29,7 @@ header{
     }
 }
 
+/*Styling for alle tre sider, elementer der gentager sig selv er alle her*/
 body{
     @include partial.body;
 
@@ -58,7 +59,7 @@ body{
                 p:last-of-type{
                     margin-bottom: 3rem;
                 }
- 
+                /*Dette er CTA på index*/
                 .btn{
                     text-decoration: none;
                     color: partial.$white;
