@@ -59,9 +59,23 @@ body section p {
   margin: 1.5rem 0 1rem 0;
   line-height: 2rem;
 }
-body section a {
+body section .btn {
   text-decoration: none;
   color: #F2F2F2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: #FFA54B;
+  border: 2px solid #FFA54B;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 15px 2px rgba(255, 165, 75, 0.5) inset;
+}
+body section .btn:hover {
+  background-color: #FFA54B;
+  color: #1F3939;
+  transition: ease-in 0.25s;
 }
 body footer {
   height: auto;

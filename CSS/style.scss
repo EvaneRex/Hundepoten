@@ -39,9 +39,10 @@ body{
                     @include partial.text;
                 }
 
-                a{
+                .btn{
                     text-decoration: none;
                     color: partial.$white;
+                    @include partial.btn;
                 }
         }
     footer{

@@ -15,11 +15,23 @@ $link2: #EAC9FF;
 }
 
 @mixin btn {
-    background-color: $CTA;
-    color: $white;
-    border-radius: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: $CTA;
+    border: 2px solid $CTA;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 15px 2px rgba($CTA, 0.50) inset;
+
+
+
+        &:hover{
+            background-color: $CTA;
+            color: $bgcolor;
+            transition: ease-in 0.25s;
+        }
 }
 
 @mixin box ($width:90%, $height:auto, $margin: 3rem auto, $padding:2rem) {
