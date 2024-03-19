@@ -1,5 +1,11 @@
-/*dobbelt tjek imorgen om det er korrekt*/
+/*Variables*/
+/*Mixins*/
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+.index {
+  background-color: #1F3939;
 }/*# sourceMappingURL=style.css.map */

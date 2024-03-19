@@ -1,0 +1,33 @@
+/*Variables*/
+$bgcolor: #1F3939;
+$lgreen: #325858;
+$white: #F2F2F2;
+$CTA: #FFA54B;
+$link1: #9EF0FF;
+$link2: #EAC9FF;
+
+/*Mixins*/
+@mixin body {
+    background-color: $bgcolor;
+    background-image: url(../Hundepoten/img/potegang.svg);
+    position: sticky;//test om det fungere når indholdet er kommet ind
+}
+
+@mixin btn {
+    background-color: $CTA;
+    color: $white;
+    border-radius: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5rem 1rem;
+}
+
+@mixin box ($width:100vw, $height:100vh) {
+    background: rgba(50, 88, 88, 0.51);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(50, 88, 88, 0.2);
+    height:$height;
+    width: $width;
+}
