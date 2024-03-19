@@ -39,6 +39,7 @@ body {
 }
 body .bg_img {
   position: fixed;
+  z-index: -100;
 }
 body a {
   text-decoration: none;

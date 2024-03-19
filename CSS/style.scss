@@ -20,7 +20,6 @@ header{
             img{
                 width: 2.2rem;
                 height: auto;
-
             }
     }
 
@@ -33,8 +32,10 @@ header{
 body{
     @include partial.body;
 
+    
     .bg_img{
         position: fixed;
+        z-index: -100;
     }
     a{
         text-decoration: none;
