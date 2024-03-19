@@ -6,24 +6,26 @@
 }
 
 header{
-        
-    .mobil{
+    nav{
+        @include partial.box;
+    }
 
-        img{
-            width: 50px;
-            height: auto;
-            margin: 1.5rem;
-        }
+    .mobil{
+        margin: 1.5rem auto;
+        padding: 1rem 2rem;
+            img{
+                width: 2.2rem;
+                height: auto;
+
+            }
     }
 
     .desktop{
-        width: 50px;
-        height: auto;
         display: none;
     }
 }
 
-.index{
+body{
     @include partial.body;
 
         section{
@@ -36,7 +38,34 @@ header{
                 p{
                     @include partial.text;
                 }
+
+                a{
+                    text-decoration: none;
+                    color: partial.$white;
+                }
         }
+    footer{
+        @include partial.box;
+        margin: 1.5rem auto;
+        padding: 0.2rem 2rem;
+            ul{
+                list-style-type: none;
+                @include partial.text;
+
+                li{
+                    text-align: center;
+                    line-height: 2.5rem;
+                   a{
+                    text-decoration: none;
+                    color: partial.$link1;
+                   } 
+                }
+                li:first-of-type{
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+            }
+    }
 }
 
 
