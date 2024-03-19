@@ -30,11 +30,11 @@ header{
             @include partial.box;
 
                 h1,h2{
-                    font-family: partial.$fontheading;
+                    @include partial.heading;
                 }
 
                 p{
-                    font-family: partial.$fonttxt;
+                    @include partial.text;
                 }
         }
 }
