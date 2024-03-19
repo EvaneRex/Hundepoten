@@ -140,6 +140,8 @@ body footer ul li:first-of-type {
   }
   header .desktop {
     display: flex;
+    padding-right: 5rem;
+    padding-left: 5rem;
   }
   header .desktop img {
     width: 3.5rem;
