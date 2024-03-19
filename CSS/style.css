@@ -122,4 +122,42 @@ body footer ul li {
 body footer ul li:first-of-type {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+/*---------------------Media querry------------------*/
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  header .mobil img {
+    width: 3rem;
+  }
+  .intro .btn {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1201px) {
+  header .mobil {
+    display: none;
+  }
+  header .desktop {
+    display: flex;
+  }
+  header .desktop img {
+    width: 3.5rem;
+  }
+  header .desktop ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+  header .desktop ul li .visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
 }/*# sourceMappingURL=style.css.map */
