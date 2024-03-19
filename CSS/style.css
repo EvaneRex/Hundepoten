@@ -37,6 +37,14 @@ body {
 body .bg_img {
   position: fixed;
 }
+body a {
+  text-decoration: none;
+  color: #9EF0FF;
+}
+body .intro {
+  display: flex;
+  flex-direction: column;
+}
 body section {
   height: auto;
   width: 90%;
@@ -64,16 +72,13 @@ body section p {
 body section p:last-of-type {
   margin-bottom: 3rem;
 }
-body section a {
-  text-decoration: none;
-  color: #9EF0FF;
-}
 body section .btn {
   text-decoration: none;
   color: #F2F2F2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
+  width: auto;
   background-color: #FFA54B;
   color: #1F3939;
   border: 2px solid #FFA54B;

@@ -31,6 +31,15 @@ body{
     .bg_img{
         position: fixed;
     }
+    a{
+        text-decoration: none;
+        color: partial.$link1;
+    }
+    
+        .intro{
+            display: flex;
+            flex-direction: column;
+        }
 
         section{
             @include partial.box;
@@ -45,11 +54,7 @@ body{
                 p:last-of-type{
                     margin-bottom: 3rem;
                 }
-
-                a{
-                    text-decoration: none;
-                    color: partial.$link1;
-                } 
+ 
                 .btn{
                     text-decoration: none;
                     color: partial.$white;
