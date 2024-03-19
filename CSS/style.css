@@ -1,4 +1,10 @@
 /*Variables*/
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /*Mixins*/
 * {
   margin: 0;
@@ -6,6 +12,34 @@
   box-sizing: border-box;
 }
 
+header .mobil img {
+  width: 50px;
+  height: auto;
+  margin: 1.5rem;
+}
+header .desktop {
+  width: 50px;
+  height: auto;
+  display: none;
+}
+
 .index {
   background-color: #1F3939;
+  background-image: url(img/potegang.svg);
+  position: sticky;
+}
+.index section {
+  height: auto;
+  width: 80%;
+  margin: 3rem auto;
+  padding: 2rem;
+  color: #F2F2F2;
+  background: rgba(50, 88, 88, 0.51);
+  border-radius: 16px;
+}
+.index section h1, .index section h2 {
+  font-family: "Arial";
+}
+.index section p {
+  font-family: "Verdana";
 }/*# sourceMappingURL=style.css.map */
