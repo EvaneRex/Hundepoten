@@ -9,13 +9,12 @@ header{
     position: sticky;
     top: 0;
     z-index: 100;
+    
     nav{
-        @include partial.nav;
-        height: 4.5rem;
+        @include partial.nav_footer;
     }
 
     .mobil{
-        margin: 1.5rem auto;
         padding: 1rem 2rem;
 
             img{
@@ -32,6 +31,7 @@ header{
 
 body{
     @include partial.body;
+
     .bg_img{
         position: fixed;
     }
@@ -66,8 +66,7 @@ body{
                 }
         }
     footer{
-        @include partial.box;
-        margin: 1.5rem auto;
+        @include partial.nav_footer;
         padding: 0.2rem 2rem;
             ul{
                 list-style-type: none;
