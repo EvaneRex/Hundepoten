@@ -33,8 +33,9 @@ header .desktop {
 
 body {
   background-color: #1F3939;
-  background-image: url(img/potegang.svg);
-  position: sticky;
+}
+body .bg_img {
+  position: fixed;
 }
 body section {
   height: auto;
@@ -73,16 +74,17 @@ body section .btn {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
-  background-color: transparent;
-  color: #FFA54B;
+  background-color: #FFA54B;
+  color: #1F3939;
   border: 2px solid #FFA54B;
   border-radius: 1.5rem;
   box-shadow: 0px 4px 15px 2px rgba(255, 165, 75, 0.5) inset;
   padding: 1rem 2rem;
+  text-align: center;
 }
 body section .btn:hover {
-  background-color: #FFA54B;
-  color: #1F3939;
+  background-color: #1F3939;
+  color: #FFA54B;
   transition: ease-in 0.25s;
 }
 body footer {
