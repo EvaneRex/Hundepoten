@@ -40,10 +40,12 @@ body .desktop {
   display: none;
 }
 
-/*---------------------Main + link------------------*/
+/*---------------------Section + link------------------*/
 .bg_img {
   position: fixed;
   z-index: -100;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section {
@@ -93,6 +95,7 @@ section .btn:hover {
   background-color: #1F3939;
   color: #FFA54B;
   transition: ease-in 0.25s;
+  text-decoration: none;
 }
 section a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
