@@ -32,6 +32,7 @@ body header .mobil {
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 body header .mobil img {
   width: 2.2rem;
