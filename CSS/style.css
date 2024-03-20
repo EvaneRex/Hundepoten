@@ -159,7 +159,7 @@ footer ul li:first-of-type {
 }
 
 /*-------------------------------Media querry----------------------------------*/
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 1024px) {
   body header .mobil img {
     width: 3rem;
   }
@@ -168,7 +168,7 @@ footer ul li:first-of-type {
     margin: auto;
   }
 }
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1025px) {
   body {
     /*-------------------Main styling----------------------*/
   }
