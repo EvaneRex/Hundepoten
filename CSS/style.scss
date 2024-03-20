@@ -4,36 +4,36 @@
     padding: 0;
     box-sizing: border-box;
 }
- /*Header og nav styling*/
-header{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    
-    nav{
-        @include partial.nav_footer;
-    }
 
-    .mobil{
-        padding: 1rem 2rem;
-        display: flex;
-        justify-content: space-between;
-            img{
-                width: 2.2rem;
-                height: auto;
-            }
-    }
-
-    .desktop{
-        display: none;
-    }
-}
-
-/*Styling for alle tre sider, elementer der gentager sig selv er alle her*/
+/*--------------------------Fælles styling af gentagene elementer op tværs af de tre sider--------------------------*/
 body{
     @include partial.body;
+    /*---------------------Header + nav styling------------------*/
+        header{
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            
+            nav{
+                @include partial.nav_footer;
+            }
 
-    
+            .mobil{
+                padding: 1rem 2rem;
+                display: flex;
+                justify-content: space-between;
+                    img{
+                        width: 2.2rem;
+                        height: auto;
+                    }
+            }
+
+            .desktop{
+                display: none;
+            }
+        }
+
+    /*---------------------Main + link------------------*/
         .bg_img{
             position: fixed;
             z-index: -100;
@@ -43,10 +43,6 @@ body{
             color: partial.$link1;
         }
     
-        .intro{
-            display: flex;
-            flex-direction: column;
-        }
 
         section{
             @include partial.box;
@@ -67,6 +63,8 @@ body{
                     @include partial.btn;
                 }
         }
+
+        /*---------------------Footer------------------*/
     footer{
         @include partial.nav_footer;
         padding: 0.2rem 2rem;
@@ -86,99 +84,110 @@ body{
     }
 }
 
-/*---------------------Media querry------------------*/
-@media screen and (min-width:700px) and (max-width:1200px) {
-    header{
-        .mobil{
-            img{
-                width: 3rem;
-            }
-        }
-    }
-
-    .intro{
-        
-        .btn{
-            width: 70%;
-            margin: auto;
-        }
-
-    }
+/*---------------------Styling af specifikke sektioner------------------*/
+/*---------------------Index------------------*/
+.intro{
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (min-width: 1201px) {
-    header{
-        .mobil{
-            display: none;
-        }
-        .desktop{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-right: 5rem;
-            padding-left: 5rem;
-                
-                a{
-                    @include partial.text;
-                    font-size: 3rem;
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
+/*-------------------------------Media querry----------------------------------*/
+@media screen and (min-width:700px) and (max-width:1200px) {
+      body{
+        header{
+            .mobil{
                 img{
-                    width: 3.5rem;
-                    margin-right: 1rem;
+                    width: 3rem;
                 }
-                
-                div{
-                    display: inline-flex;
-                    
-
-                        form{
-                            margin: auto 1rem;
-
-                            input[type='search'] {
-                                @include partial.text;
-                                background-color: partial.$white;
-                                color: partial.$bgcolor;
-                                padding: 0.2rem 1rem;
-                                border-radius: 1.5rem;
-                                width: 15rem;
-                                
-                                
-                            }
-
-                                .visually-hidden{
-                                    position: absolute !important;
-                                    width: 1px !important;
-                                    height: 1px !important;
-                                    padding: 0 !important;
-                                    margin: -1px !important;
-                                    overflow: hidden !important;
-                                    clip: rect(0,0,0,0) !important;
-                                    white-space: nowrap !important;
-                                    border: 0 !important;
-                                }
-                            
-                    }
-                }
+            }
         }
-    }
 
-    /*-------------------Main styling----------------------*/
-    main{
         .intro{
             
             .btn{
-                width: 20rem;
+                width: 70%;
                 margin: auto;
             }
-    
+
         }
-        section{
-            width: 70%;
+      }    
+}
+
+@media screen and (min-width: 1201px) {
+    body{
+        header{
+            .mobil{
+                display: none;
+            }
+            .desktop{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 5rem;
+                padding-left: 5rem;
+                    
+                    a{
+                        @include partial.text;
+                        font-size: 3rem;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    img{
+                        width: 3.5rem;
+                        margin-right: 1rem;
+                    }
+                    
+                    div{
+                        display: inline-flex;
+                        
+
+                            form{
+                                margin: auto 1rem;
+
+                                input[type='search'] {
+                                    @include partial.text;
+                                    background-color: partial.$white;
+                                    color: partial.$bgcolor;
+                                    padding: 0.2rem 1rem;
+                                    border-radius: 1.5rem;
+                                    width: 15rem;
+                                    
+                                    
+                                }
+
+                                    .visually-hidden{
+                                        position: absolute !important;
+                                        width: 1px !important;
+                                        height: 1px !important;
+                                        padding: 0 !important;
+                                        margin: -1px !important;
+                                        overflow: hidden !important;
+                                        clip: rect(0,0,0,0) !important;
+                                        white-space: nowrap !important;
+                                        border: 0 !important;
+                                    }
+                                
+                        }
+                    }
+            }
+        }
+
+        /*-------------------Main styling----------------------*/
+        main{
+            .intro{
+                
+                .btn{
+                    width: 20rem;
+                    margin: auto;
+                }
+        
+            }
+            section{
+                width: 70%;
+            }
         }
     }
 }

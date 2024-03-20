@@ -7,13 +7,19 @@
   box-sizing: border-box;
 }
 
-/*Header og nav styling*/
-header {
+/*--------------------------Fælles styling af gentagene elementer op tværs af de tre sider--------------------------*/
+body {
+  background-color: #1F3939;
+  /*---------------------Header + nav styling------------------*/
+  /*---------------------Main + link------------------*/
+  /*---------------------Footer------------------*/
+}
+body header {
   position: sticky;
   top: 0;
   z-index: 100;
 }
-header nav {
+body header nav {
   height: auto;
   width: 100%;
   padding: 2rem;
@@ -22,22 +28,17 @@ header nav {
   border: 2px solid rgba(242, 242, 242, 0.5);
   box-shadow: 0px 4px 15px 2px rgba(242, 242, 242, 0.5) inset;
 }
-header .mobil {
+body header .mobil {
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
 }
-header .mobil img {
+body header .mobil img {
   width: 2.2rem;
   height: auto;
 }
-header .desktop {
+body header .desktop {
   display: none;
-}
-
-/*Styling for alle tre sider, elementer der gentager sig selv er alle her*/
-body {
-  background-color: #1F3939;
 }
 body .bg_img {
   position: fixed;
@@ -46,10 +47,6 @@ body .bg_img {
 body a {
   text-decoration: none;
   color: #9EF0FF;
-}
-body .intro {
-  display: flex;
-  flex-direction: column;
 }
 body section {
   height: auto;
@@ -126,28 +123,38 @@ body footer ul li:first-of-type {
   font-size: 1.5rem;
 }
 
-/*---------------------Media querry------------------*/
+/*---------------------Styling af specifikke sektioner------------------*/
+/*---------------------Index------------------*/
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+/*-------------------------------Media querry----------------------------------*/
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-  header .mobil img {
+  body header .mobil img {
     width: 3rem;
   }
-  .intro .btn {
+  body .intro .btn {
     width: 70%;
     margin: auto;
   }
 }
 @media screen and (min-width: 1201px) {
-  header .mobil {
+  body {
+    /*-------------------Main styling----------------------*/
+  }
+  body header .mobil {
     display: none;
   }
-  header .desktop {
+  body header .desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 5rem;
     padding-left: 5rem;
   }
-  header .desktop a {
+  body header .desktop a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.25rem;
     line-height: 2rem;
@@ -160,17 +167,17 @@ body footer ul li:first-of-type {
     justify-content: center;
     align-items: center;
   }
-  header .desktop img {
+  body header .desktop img {
     width: 3.5rem;
     margin-right: 1rem;
   }
-  header .desktop div {
+  body header .desktop div {
     display: inline-flex;
   }
-  header .desktop div form {
+  body header .desktop div form {
     margin: auto 1rem;
   }
-  header .desktop div form input[type=search] {
+  body header .desktop div form input[type=search] {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.25rem;
     line-height: 2rem;
@@ -182,7 +189,7 @@ body footer ul li:first-of-type {
     border-radius: 1.5rem;
     width: 15rem;
   }
-  header .desktop div form .visually-hidden {
+  body header .desktop div form .visually-hidden {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -193,12 +200,11 @@ body footer ul li:first-of-type {
     white-space: nowrap !important;
     border: 0 !important;
   }
-  /*-------------------Main styling----------------------*/
-  main .intro .btn {
+  body main .intro .btn {
     width: 20rem;
     margin: auto;
   }
-  main section {
+  body main section {
     width: 70%;
   }
 }/*# sourceMappingURL=style.css.map */
