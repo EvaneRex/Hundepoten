@@ -193,4 +193,12 @@ body footer ul li:first-of-type {
     white-space: nowrap !important;
     border: 0 !important;
   }
+  /*-------------------Main styling----------------------*/
+  main .intro .btn {
+    width: 20rem;
+    margin: auto;
+  }
+  main section {
+    width: 70%;
+  }
 }/*# sourceMappingURL=style.css.map */
