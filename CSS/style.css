@@ -69,19 +69,20 @@ body section h1, body section h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.75rem;
   padding: 1rem 0.5rem 0 0.5rem;
+  color: #F2F2F2;
 }
 body section p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
   padding: 1.5rem 0.5rem 0 0.5rem;
+  color: #F2F2F2;
 }
 body section p:last-of-type {
   margin-bottom: 3rem;
 }
 body section .btn {
   text-decoration: none;
-  color: #F2F2F2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
@@ -114,6 +115,7 @@ body footer ul {
   font-size: 1.25rem;
   line-height: 2rem;
   padding: 1.5rem 0.5rem 0 0.5rem;
+  color: #F2F2F2;
 }
 body footer ul li {
   text-align: center;
@@ -140,11 +142,31 @@ body footer ul li:first-of-type {
   }
   header .desktop {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-right: 5rem;
     padding-left: 5rem;
   }
   header .desktop img {
     width: 3.5rem;
+  }
+  header .desktop div {
+    display: inline-flex;
+  }
+  header .desktop div form {
+    margin: auto 1rem;
+  }
+  header .desktop div form input[type=search] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding: 1.5rem 0.5rem 0 0.5rem;
+    color: #F2F2F2;
+    background-color: #F2F2F2;
+    color: #1F3939;
+    padding: 0.2rem 1rem;
+    border-radius: 1.5rem;
+    width: 15rem;
   }
   header .desktop div form .visually-hidden {
     position: absolute !important;

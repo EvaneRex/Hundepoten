@@ -64,7 +64,6 @@ body{
                 /*Dette er CTA på index*/
                 .btn{
                     text-decoration: none;
-                    color: partial.$white;
                     @include partial.btn;
                 }
         }
@@ -114,6 +113,8 @@ body{
         }
         .desktop{
             display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding-right: 5rem;
             padding-left: 5rem;
                 
@@ -122,20 +123,35 @@ body{
                 }
                 
                 div{
+                    display: inline-flex;
+                    
 
                         form{
-                        .visually-hidden{
-                            position: absolute !important;
-                            width: 1px !important;
-                            height: 1px !important;
-                            padding: 0 !important;
-                            margin: -1px !important;
-                            overflow: hidden !important;
-                            clip: rect(0,0,0,0) !important;
-                            white-space: nowrap !important;
-                            border: 0 !important;
-                        }
-                    
+                            margin: auto 1rem;
+
+                            input[type='search'] {
+                                @include partial.text;
+                                background-color: partial.$white;
+                                color: partial.$bgcolor;
+                                padding: 0.2rem 1rem;
+                                border-radius: 1.5rem;
+                                width: 15rem;
+                                
+                                
+                            }
+
+                                .visually-hidden{
+                                    position: absolute !important;
+                                    width: 1px !important;
+                                    height: 1px !important;
+                                    padding: 0 !important;
+                                    margin: -1px !important;
+                                    overflow: hidden !important;
+                                    clip: rect(0,0,0,0) !important;
+                                    white-space: nowrap !important;
+                                    border: 0 !important;
+                                }
+                            
                     }
                 }
         }
