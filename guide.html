@@ -7,8 +7,35 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <img class="bg_img" src="img/potegang.svg" alt="poteaftryk">
-<!--indsæt header når denne er færdig og stylet-->
+    <header>
+        <!-------------------------------Mobil nav------------------------------------->
+        <nav class="mobil">
+            <img src="img/bmenu.svg" alt="Menu ikon">
+            <a href="index.html">
+                <img src="img/pote_ikon.svg" alt="aftryk af en hundepote, ved klik navigerer til forsiden">
+            </a>
+            
+            <img src="/img/soegeikon.svg" alt="Lup, soegeikon">
+        </nav>
+
+        <!-------------------------------Desktop nav------------------------------------->
+       <nav class="desktop">
+            <a href="index.html">
+                <img src="img/pote_ikon.svg" alt="aftryk af en hundepote, ved klik navigerer til forsiden">
+                HundePoten
+            </a>
+            <div>
+                <form>
+                    <label class="visually-hidden" for="search">Søg</label>
+                    <input type="search" id="search" placeholder="Søg" required>
+                </form>
+                <img src="/img/soegeikon.svg" alt="Lup, soegeikon">
+            </div>
+        </nav>
+    </header>
+    
+    <img class="bg_img" src="img/potegang.svg" alt="poteaftryk" aria-hidden="true">
+
     <main>
         <section>
             <h1>
