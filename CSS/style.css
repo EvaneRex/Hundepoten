@@ -146,12 +146,7 @@ body footer ul li:first-of-type {
   header .desktop img {
     width: 3.5rem;
   }
-  header .desktop ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-  }
-  header .desktop ul li .visually-hidden {
+  header .desktop div form .visually-hidden {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
