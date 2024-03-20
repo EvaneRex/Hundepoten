@@ -60,8 +60,8 @@ body{
                 p:last-of-type{
                     margin-bottom: 3rem;
                 }
-                /*Dette er CTA på index*/
-                .btn{
+                 /*Dette er CTA på index*/
+                 .btn{
                     text-decoration: none;
                     @include partial.btn;
                 }
@@ -91,26 +91,38 @@ body{
 /*---------------------Index------------------*/
 .intro{
     display: grid;
-    grid-template-columns: 1fr; 
-    justify-content: center;   
-        
-        img{
-            border-radius: 1.5rem;
-            width: 100%;
-            height: auto;
-        }
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;   
 
-        .ref{
-            color: partial.$white;
-            font-size: 0.8rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: center;
+        .intro_img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img{
+                border-radius: 1.5rem;
+                width: 100%;
+                height: auto;
+            }
+
+            .ref{
+                color: partial.$white;
+                font-size: 0.8rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+        }       
+        
+        .intro_txt{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-             
 }
 
 /*-------------------------------Media querry----------------------------------*/
-@media screen and (min-width:700px) and (max-width:1200px) {
+@media screen and (min-width:700px) and (max-width:1000px) {
       body{
         header{
             .mobil{
@@ -129,6 +141,7 @@ body{
         }
       }    
 }
+
 
 @media screen and (min-width: 1201px) {
     body{
@@ -195,7 +208,11 @@ body{
         /*-------------------Main styling----------------------*/
         main{
             .intro{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 2rem;
                 
+
                 .btn{
                     width: 20rem;
                     margin: auto;
