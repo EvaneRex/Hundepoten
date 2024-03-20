@@ -46,11 +46,6 @@ body .desktop {
   z-index: -100;
 }
 
-a {
-  text-decoration: none;
-  color: #9EF0FF;
-}
-
 section {
   height: auto;
   width: 90%;
@@ -99,6 +94,18 @@ section .btn:hover {
   color: #FFA54B;
   transition: ease-in 0.25s;
 }
+section a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #9EF0FF;
+  text-decoration: none;
+}
+section a:hover {
+  text-decoration: underline;
+  color: #EAC9FF;
+  transition: ease-in-out 0.3s;
+}
 
 /*---------------------Footer------------------*/
 footer {
@@ -122,6 +129,18 @@ footer ul {
 footer ul li {
   text-align: center;
   line-height: 2.5rem;
+}
+footer ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #9EF0FF;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+  color: #EAC9FF;
+  transition: ease-in-out 0.3s;
 }
 footer ul li:first-of-type {
   font-weight: bold;
@@ -156,6 +175,28 @@ footer ul li:first-of-type {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.oversigt {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+}
+.oversigt .a-j ul {
+  list-style: none;
+}
+.oversigt .a-j ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #9EF0FF;
+  text-decoration: none;
+}
+.oversigt .a-j ul li a:hover {
+  text-decoration: underline;
+  color: #EAC9FF;
+  transition: ease-in-out 0.3s;
 }
 
 /*-------------------------------Media querry----------------------------------*/
@@ -194,6 +235,11 @@ footer ul li:first-of-type {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+  }
+  body header .desktop a:hover {
+    color: #FFA54B;
+    transition: ease-in-out 0.3s;
   }
   body header .desktop img {
     width: 3rem;

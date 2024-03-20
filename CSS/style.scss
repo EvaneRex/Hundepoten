@@ -23,6 +23,7 @@ body{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                
                     img{
                         width: 2.2rem;
                         height: auto;
@@ -41,10 +42,7 @@ body{
             position: fixed;
             z-index: -100;
         }
-        a{
-            text-decoration: none;
-            color: partial.$link1;
-        }
+        
     
 
         section{
@@ -60,10 +58,15 @@ body{
                 p:last-of-type{
                     margin-bottom: 3rem;
                 }
+
                  /*Dette er CTA på index*/
                  .btn{
                     text-decoration: none;
                     @include partial.btn;
+                }
+
+                a{
+                    @include partial.link;
                 }
         }
 
@@ -78,6 +81,10 @@ body{
                 li{
                     text-align: center;
                     line-height: 2.5rem;
+
+                        a{
+                            @include partial.link;
+                        }
                 }
                 li:first-of-type{
                     font-weight: bold;
@@ -119,6 +126,27 @@ body{
             flex-direction: column;
             justify-content: center;
         }
+}
+
+.oversigt{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+
+        .a-j{
+            
+                ul{
+                    list-style: none;
+
+                    li{
+                        a{
+                            @include partial.link;
+                        }
+                    }
+                }
+        }
+   
 }
 
 /*-------------------------------Media querry----------------------------------*/
@@ -164,6 +192,12 @@ body{
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        text-decoration: none;
+                        
+                            &:hover{
+                                color: partial.$CTA;
+                                transition: ease-in-out 0.3s;
+                            }
                     }
                     img{
                         width: 3rem;

@@ -67,3 +67,17 @@ $link2: #EAC9FF;
     padding: 1.5rem 0.5rem 0 0.5rem;
     color: $white;
 }
+
+@mixin link ($line-height:2rem,$fontsize:1.25rem){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $fontsize;
+    line-height: $line-height;
+    color: $link1;
+    text-decoration: none; 
+    
+        &:hover{
+            text-decoration: underline;
+            color: $link2;
+            transition: ease-in-out 0.3s;
+        }
+}
