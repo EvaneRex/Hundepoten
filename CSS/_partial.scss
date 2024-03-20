@@ -74,10 +74,9 @@ $link2: #EAC9FF;
     line-height: $line-height;
     color: $link1;
     text-decoration: none; 
-    
+
         &:hover{
             text-decoration: underline;
             color: $link2;
-            transition: ease-in-out 0.3s;
         }
 }

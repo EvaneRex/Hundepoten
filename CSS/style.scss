@@ -135,16 +135,22 @@ body{
     align-items: center;
 
         .a-j{
-            
+            font-weight: bold;
                 ul{
                     list-style: none;
+                    font-weight: lighter;
 
                     li{
                         a{
                             @include partial.link;
+                            padding: 1.5rem 0.5rem 0 0.5rem;
                         }
                     }
                 }
+        }
+
+        .k-t{
+            font-weight: bold;
         }
    
 }

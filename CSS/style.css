@@ -104,7 +104,6 @@ section a {
 section a:hover {
   text-decoration: underline;
   color: #EAC9FF;
-  transition: ease-in-out 0.3s;
 }
 
 /*---------------------Footer------------------*/
@@ -140,7 +139,6 @@ footer ul li a {
 footer ul li a:hover {
   text-decoration: underline;
   color: #EAC9FF;
-  transition: ease-in-out 0.3s;
 }
 footer ul li:first-of-type {
   font-weight: bold;
@@ -183,8 +181,12 @@ footer ul li:first-of-type {
   grid-template-rows: auto;
   align-items: center;
 }
+.oversigt .a-j {
+  font-weight: bold;
+}
 .oversigt .a-j ul {
   list-style: none;
+  font-weight: lighter;
 }
 .oversigt .a-j ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -192,11 +194,14 @@ footer ul li:first-of-type {
   line-height: 2rem;
   color: #9EF0FF;
   text-decoration: none;
+  padding: 1.5rem 0.5rem 0 0.5rem;
 }
 .oversigt .a-j ul li a:hover {
   text-decoration: underline;
   color: #EAC9FF;
-  transition: ease-in-out 0.3s;
+}
+.oversigt .k-t {
+  font-weight: bold;
 }
 
 /*-------------------------------Media querry----------------------------------*/
