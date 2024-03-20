@@ -22,7 +22,7 @@ body header {
 body header nav {
   height: auto;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   color: #F2F2F2;
   background-color: #325858;
   border: 2px solid rgba(242, 242, 242, 0.5);
@@ -99,7 +99,7 @@ body section .btn:hover {
 body footer {
   height: auto;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   color: #F2F2F2;
   background-color: #325858;
   border: 2px solid rgba(242, 242, 242, 0.5);
@@ -160,7 +160,7 @@ body footer ul li:first-of-type {
     line-height: 2rem;
     padding: 1.5rem 0.5rem 0 0.5rem;
     color: #F2F2F2;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
     padding: 0;
     display: flex;
@@ -168,7 +168,7 @@ body footer ul li:first-of-type {
     align-items: center;
   }
   body header .desktop img {
-    width: 3.5rem;
+    width: 3rem;
     margin-right: 1rem;
   }
   body header .desktop div {

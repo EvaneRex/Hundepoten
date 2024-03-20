@@ -128,7 +128,7 @@ body{
                     
                     a{
                         @include partial.text;
-                        font-size: 3rem;
+                        font-size: 2rem;
                         margin: 0;
                         padding: 0;
                         display: flex;
@@ -136,7 +136,7 @@ body{
                         align-items: center;
                     }
                     img{
-                        width: 3.5rem;
+                        width: 3rem;
                         margin-right: 1rem;
                     }
                     

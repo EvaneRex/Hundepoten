@@ -12,7 +12,7 @@ $link2: #EAC9FF;
     background-color: $bgcolor;
 }
 
-@mixin nav_footer ($width:100%, $height:auto, $padding:2rem) {
+@mixin nav_footer ($width:100%, $height:auto, $padding:1.5rem) {
     height:$height;
     width: $width;
     padding: $padding;
