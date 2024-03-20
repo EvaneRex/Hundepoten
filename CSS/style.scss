@@ -90,18 +90,23 @@ body{
 /*---------------------Styling af specifikke sektioner------------------*/
 /*---------------------Index------------------*/
 .intro{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: center;   
+        
+        img{
+            border-radius: 1.5rem;
+            width: 100%;
+            height: auto;
+        }
 
-    img{
-        border-radius: 1.5rem;
-    }
-    .ref{
-        color: partial.$white;
-        font-size: 0.8rem;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        align-self: center;
-    }
+        .ref{
+            color: partial.$white;
+            font-size: 0.8rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+             
 }
 
 /*-------------------------------Media querry----------------------------------*/
@@ -116,7 +121,6 @@ body{
         }
 
         .intro{
-            
             .btn{
                 width: 70%;
                 margin: auto;

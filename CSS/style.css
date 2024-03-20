@@ -131,17 +131,20 @@ footer ul li:first-of-type {
 /*---------------------Styling af specifikke sektioner------------------*/
 /*---------------------Index------------------*/
 .intro {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
 }
 .intro img {
   border-radius: 1.5rem;
+  width: 100%;
+  height: auto;
 }
 .intro .ref {
   color: #F2F2F2;
   font-size: 0.8rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  align-self: center;
+  text-align: center;
 }
 
 /*-------------------------------Media querry----------------------------------*/
