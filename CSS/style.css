@@ -147,8 +147,22 @@ body footer ul li:first-of-type {
     padding-right: 5rem;
     padding-left: 5rem;
   }
+  header .desktop a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding: 1.5rem 0.5rem 0 0.5rem;
+    color: #F2F2F2;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   header .desktop img {
     width: 3.5rem;
+    margin-right: 1rem;
   }
   header .desktop div {
     display: inline-flex;

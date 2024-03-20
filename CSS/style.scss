@@ -118,8 +118,18 @@ body{
             padding-right: 5rem;
             padding-left: 5rem;
                 
+                a{
+                    @include partial.text;
+                    font-size: 3rem;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
                 img{
                     width: 3.5rem;
+                    margin-right: 1rem;
                 }
                 
                 div{
