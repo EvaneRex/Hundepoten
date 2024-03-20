@@ -11,8 +11,6 @@
 body {
   background-color: #1F3939;
   /*---------------------Header + nav styling------------------*/
-  /*---------------------Main + link------------------*/
-  /*---------------------Footer------------------*/
 }
 body header {
   position: sticky;
@@ -38,18 +36,22 @@ body header .mobil img {
   width: 2.2rem;
   height: auto;
 }
-body header .desktop {
+body .desktop {
   display: none;
 }
-body .bg_img {
+
+/*---------------------Main + link------------------*/
+.bg_img {
   position: fixed;
   z-index: -100;
 }
-body a {
+
+a {
   text-decoration: none;
   color: #9EF0FF;
 }
-body section {
+
+section {
   height: auto;
   width: 90%;
   margin: 3rem auto;
@@ -63,23 +65,23 @@ body section {
           backdrop-filter: blur(5px);
   /*Dette er CTA på index*/
 }
-body section h1, body section h2 {
+section h1, section h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.75rem;
   padding: 1rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
 }
-body section p {
+section p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
   padding: 1.5rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
 }
-body section p:last-of-type {
+section p:last-of-type {
   margin-bottom: 3rem;
 }
-body section .btn {
+section .btn {
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
@@ -92,12 +94,14 @@ body section .btn {
   padding: 1rem 2rem;
   text-align: center;
 }
-body section .btn:hover {
+section .btn:hover {
   background-color: #1F3939;
   color: #FFA54B;
   transition: ease-in 0.25s;
 }
-body footer {
+
+/*---------------------Footer------------------*/
+footer {
   height: auto;
   width: 100%;
   padding: 1.5rem;
@@ -107,7 +111,7 @@ body footer {
   box-shadow: 0px 4px 15px 2px rgba(242, 242, 242, 0.5) inset;
   padding: 0.2rem 2rem;
 }
-body footer ul {
+footer ul {
   list-style-type: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.25rem;
@@ -115,11 +119,11 @@ body footer ul {
   padding: 1.5rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
 }
-body footer ul li {
+footer ul li {
   text-align: center;
   line-height: 2.5rem;
 }
-body footer ul li:first-of-type {
+footer ul li:first-of-type {
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -129,6 +133,15 @@ body footer ul li:first-of-type {
 .intro {
   display: flex;
   flex-direction: column;
+}
+.intro img {
+  border-radius: 1.5rem;
+}
+.intro .ref {
+  color: #F2F2F2;
+  font-size: 0.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-self: center;
 }
 
 /*-------------------------------Media querry----------------------------------*/
