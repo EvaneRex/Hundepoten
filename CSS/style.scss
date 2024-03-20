@@ -73,9 +73,11 @@ body{
     footer{
         @include partial.nav_footer;
         padding: 0.2rem 2rem;
+        margin-top: 6rem;
             ul{
                 list-style-type: none;
                 @include partial.text;
+                padding-bottom: 1rem;
 
                 li{
                     text-align: center;
