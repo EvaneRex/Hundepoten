@@ -226,6 +226,17 @@ footer ul li:first-of-type {
   height: auto;
 }
 
+/*---------------tips---------------*/
+.lightbulb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lightbulb img {
+  width: 4rem;
+  height: 4.2rem;
+}
+
 /*-------------------------------Media querry----------------------------------*/
 @media screen and (min-width: 700px) and (max-width: 1024px) {
   body header .mobil img {
