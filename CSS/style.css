@@ -271,6 +271,21 @@ footer img {
   border-radius: 1.5rem;
 }
 
+.pleje .illu {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pleje .illu img {
+  width: auto;
+  height: 4rem;
+}
+.pleje .illu img:last-of-type {
+  width: auto;
+  height: 6rem;
+  margin-left: 2rem;
+}
+
 /*---------------tips---------------*/
 .tip {
   height: auto;
@@ -447,6 +462,20 @@ footer img {
   body main .tip .lightbulb img {
     width: 4rem;
     height: 4.2rem;
+  }
+  body main .pleje {
+    display: flex;
+    flex-direction: row;
+  }
+  body main .pleje .illu img:first-of-type {
+    width: 15rem;
+    height: auto;
+    margin-top: 2rem;
+  }
+  body main .pleje .illu img:last-of-type {
+    width: auto;
+    height: 15rem;
+    margin-top: 15rem;
   }
   footer {
     padding: 0.2rem 2rem;

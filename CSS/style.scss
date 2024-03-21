@@ -228,6 +228,23 @@ body{
             border-radius: 1.5rem
         }
 }
+.pleje{
+        .illu{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: auto;
+                height: 4rem;                 
+            }
+            img:last-of-type{
+                width: auto;
+                height: 6rem;
+                margin-left: 2rem;
+            }
+            
+        }
+}
 
 /*---------------tips---------------*/
 .tip{
@@ -415,6 +432,23 @@ body{
                 }
             }
 
+            .pleje{
+                display: flex;
+                flex-direction: row;
+
+                    .illu{
+                        img:first-of-type{
+                            width: 15rem;
+                            height: auto;
+                            margin-top: 2rem;
+                        }
+                        img:last-of-type{
+                            width: auto;
+                            height: 15rem;
+                            margin-top: 15rem;
+                        }
+                    }
+            }
         }
     }
 
