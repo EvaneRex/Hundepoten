@@ -76,7 +76,7 @@ section h2, section h3 {
 }
 section p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   padding: 1.5rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
@@ -132,7 +132,7 @@ footer {
 footer ul {
   list-style-type: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   padding: 1.5rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
@@ -299,7 +299,7 @@ footer img {
   }
   body header .desktop a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     padding: 1.5rem 0.5rem 0 0.5rem;
     color: #F2F2F2;
@@ -328,7 +328,7 @@ footer img {
   }
   body header .desktop div form input[type=search] {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     padding: 1.5rem 0.5rem 0 0.5rem;
     color: #F2F2F2;
@@ -365,7 +365,7 @@ footer img {
     align-items: center;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     padding: 1.5rem 0.5rem 0 0.5rem;
     color: #F2F2F2;
@@ -381,7 +381,7 @@ footer img {
     /*-------------------Stling på specifikke sektioner----------------------*/
   }
   body main section {
-    width: 70%;
+    max-width: 70rem;
   }
   body main .intro {
     grid-template-columns: 1fr 1fr;
@@ -398,7 +398,7 @@ footer img {
     gap: 2rem;
   }
   body main .tip {
-    width: 70%;
+    max-width: 70rem;
   }
   body main .tip .lightbulb {
     display: flex;

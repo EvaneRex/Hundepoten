@@ -326,7 +326,7 @@ body{
         main{
             
             section{
-                width: 70%;
+                max-width: 70rem;
             }
 
             /*-------------------Stling på specifikke sektioner----------------------*/
@@ -350,7 +350,7 @@ body{
             }
             
             .tip{
-                width: 70%;
+                max-width: 70rem;
             
                 .lightbulb{
                     display: flex;
