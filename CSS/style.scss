@@ -78,11 +78,10 @@ body{
         /*---------------------Footer------------------*/
     footer{
         @include partial.nav_footer;
-        padding: 0.2rem 2rem;
+        padding: 1rem 2rem;
         margin-top: 6rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 2rem 5rem 2rem 5rem;
+        grid-template-columns: 2fr 1fr;
 
 
             ul{
@@ -106,10 +105,10 @@ body{
             }
 
             img{
-                width: 5rem;
-                height: 5.5rem;
+                width: 3.2rem;
+                height: 3.5rem;
                 align-self: center;
-                justify-self: end;
+                justify-self: center;
             }
     }
 
@@ -362,6 +361,20 @@ body{
                 }
             }
         }
+    }
+
+    footer{
+        padding: 0.2rem 2rem;
+        margin-top: 6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem 5rem 2rem 5rem;
+            img{
+                width: 5rem;
+                height: 5.5rem;
+                align-self: center;
+                justify-self: end;
+            }
     }
 }
 
