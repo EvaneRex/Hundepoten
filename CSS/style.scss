@@ -37,6 +37,36 @@ body{
             }
         }
 
+    /*---------------------Undermenu------------------*/
+
+  .undermenu{
+        @include partial.nav_footer;
+        height: 3rem;
+        padding-top: 0.5rem;
+        position: sticky;
+        top: -5rem;
+        transition: top 0.3s ease;
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                
+
+                    li{
+                            a{
+                                @include partial.nav_txt;
+                                @include partial.text;
+                                font-size: 1.5rem;
+                                padding: 0 1rem;
+                                margin: 0;
+                            }
+                    }
+            }
+
+    }
+
     /*---------------------Section + link------------------*/
         .bg_img{
             position: fixed;
@@ -239,18 +269,7 @@ body{
                     
                     a{
                         @include partial.text;
-                        font-size: 2rem;
-                        margin: 0;
-                        padding: 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        text-decoration: none;
-                        
-                            &:hover{
-                                color: partial.$CTA;
-                                transition: ease-in-out 0.3s;
-                            }
+                        @include partial.nav_txt;
                     }
                     img{
                         width: 3rem;
