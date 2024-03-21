@@ -265,6 +265,17 @@ footer img {
   height: auto;
 }
 
+.pelspleje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pelspleje img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
 /*---------------tips---------------*/
 .tip {
   height: auto;
@@ -437,11 +448,6 @@ footer img {
   }
   body main .tip {
     max-width: 60rem;
-  }
-  body main .tip .lightbulb {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   body main .tip .lightbulb img {
     width: 4rem;
