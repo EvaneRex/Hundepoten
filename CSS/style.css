@@ -381,12 +381,12 @@ footer img {
     /*-------------------Stling på specifikke sektioner----------------------*/
   }
   body main section {
-    max-width: 70rem;
+    max-width: 60rem;
   }
   body main .intro {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr;
-    gap: 2rem;
+    gap: 1rem;
   }
   body main .intro .btn {
     width: 20rem;
@@ -398,7 +398,7 @@ footer img {
     gap: 2rem;
   }
   body main .tip {
-    max-width: 70rem;
+    max-width: 60rem;
   }
   body main .tip .lightbulb {
     display: flex;
