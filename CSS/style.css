@@ -310,6 +310,7 @@ footer ul li:first-of-type {
   }
   body header .desktop div {
     display: inline-flex;
+    align-items: center;
   }
   body header .desktop div form {
     margin: auto 1rem;
