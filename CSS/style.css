@@ -257,6 +257,15 @@ footer ul li:first-of-type {
   body header .mobil img {
     width: 3rem;
   }
+  body .intro {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+  }
+  body .intro .intro_img img {
+    height: auto;
+    width: 40vw;
+  }
   body .intro .btn {
     width: 70%;
     margin: auto;

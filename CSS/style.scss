@@ -204,10 +204,20 @@ body{
         }
 
         .intro{
-            .btn{
-                width: 70%;
-                margin: auto;
-            }
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 2rem;
+            
+                .intro_img{
+                    img{
+                        height: auto;
+                        width: 40vw;
+                    }
+                }
+                    .btn{
+                    width: 70%;
+                    margin: auto;
+                }
 
         }
       }    
