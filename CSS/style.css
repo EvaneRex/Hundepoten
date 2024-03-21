@@ -194,6 +194,7 @@ footer img {
   justify-content: center;
 }
 
+/*---------------------Guide------------------*/
 .oversigt {
   display: grid;
   grid-template-columns: 1fr;
@@ -229,6 +230,30 @@ footer img {
   justify-content: center;
 }
 
+.Guide {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+}
+.Guide .guide_img {
+  display: flex;
+  flex-direction: column;
+}
+.Guide .guide_img img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+.Guide .guide_img .ref {
+  color: #F2F2F2;
+  font-size: 0.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+/*---------------------Engelsk springer spaniel------------------*/
 .ES_intro {
   display: flex;
   flex-direction: column;
@@ -378,7 +403,10 @@ footer img {
     transition: ease-in-out 0.3s;
   }
   body main {
-    /*-------------------Stling på specifikke sektioner----------------------*/
+    /*-------------------Styling på specifikke sektioner----------------------*/
+    /*-------------------index----------------------*/
+    /*-------------------Guide----------------------*/
+    /*-------------------Engelsk springer spaniel----------------------*/
   }
   body main section {
     max-width: 60rem;
@@ -396,6 +424,16 @@ footer img {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 2rem;
+  }
+  body main .Guide {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  body main .Guide .guide_img img {
+    height: 20rem;
+    width: auto;
   }
   body main .tip {
     max-width: 60rem;

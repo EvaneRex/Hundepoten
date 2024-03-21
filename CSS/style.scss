@@ -150,6 +150,7 @@ body{
         }
 }
 
+/*---------------------Guide------------------*/
 .oversigt{
     display: grid;
     grid-template-columns: 1fr;
@@ -182,7 +183,32 @@ body{
         }
    
 }
+.Guide{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center; 
 
+        .guide_img{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 1.5rem;
+            }
+
+            .ref{
+                color: partial.$white;
+                font-size: 0.8rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                margin-left: 0.5rem;
+            }
+        }
+
+}
+/*---------------------Engelsk springer spaniel------------------*/
 .ES_intro{
     display: flex;
     flex-direction: column;
@@ -193,7 +219,6 @@ body{
             width: 100%;
             height: auto;
         }
-
 }
 
 /*---------------tips---------------*/
@@ -329,7 +354,8 @@ body{
                 max-width: 60rem;
             }
 
-            /*-------------------Stling på specifikke sektioner----------------------*/
+            /*-------------------Styling på specifikke sektioner----------------------*/
+            /*-------------------index----------------------*/
             .intro{
                 grid-template-columns: 0.5fr 1fr;
                 grid-template-rows: 1fr;
@@ -341,12 +367,31 @@ body{
                 }
             }
 
+            /*-------------------Guide----------------------*/
             .oversigt{
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr;
                 gap: 2rem;
             }
+
+            .Guide{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 2rem;
+                margin-top: 3rem;
+
+                    .guide_img{
+                        
+                            img{
+                                height: 20rem;
+                                width: auto;
+                            }
+                    }
+
+                 
+            }
             
+            /*-------------------Engelsk springer spaniel----------------------*/
             .tip{
                 max-width: 60rem;
             
