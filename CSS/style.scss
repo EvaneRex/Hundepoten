@@ -178,16 +178,19 @@ body{
 }
 
 /*---------------tips---------------*/
-.lightbulb{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.tip{
+    @include partial.tip;
+        .lightbulb{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-        img{
-            width: 3rem;
-            height: 3.2rem;
+                img{
+                    width: 3rem;
+                    height: 3.2rem;
+                }  
         }
-}
+    }
 
 /*-------------------------------Media querry----------------------------------*/
 @media screen and (min-width:700px) and (max-width:1024px) {
@@ -306,15 +309,19 @@ body{
                 gap: 2rem;
             }
             
-            .lightbulb{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+            .tip{
+                width: 70%;
             
-                    img{
-                        width: 4rem;
-                        height: 4.2rem;
-                    }
+                .lightbulb{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                
+                        img{
+                            width: 4rem;
+                            height: 4.2rem;
+                        }
+                }
             }
         }
     }
