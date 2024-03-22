@@ -1,6 +1,14 @@
 @charset "UTF-8";
 /*Variables*/
 @font-face {
+  font-family: "Elsie_Swash_Caps";
+  src: url(/fonts/Elsie_Swash_Caps/ElsieSwashCaps-Regular.ttf);
+}
+@font-face {
+  font-family: "Inria_Serif";
+  src: url(/fonts/Inria_Serif/InriaSerif-Regular.ttf);
+}
+@font-face {
   font-family: "Lexend-Regular";
   src: url(/fonts/Lexend/Lexend-Regular.ttf);
 }
@@ -74,7 +82,7 @@ section {
   /*Dette er CTA på index*/
 }
 section h1, section h2, section h3 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inria_Serif";
   font-size: 2rem;
   padding: 1rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
@@ -95,7 +103,7 @@ section p:last-of-type {
 section .btn {
   text-decoration: none;
   font-family: "Lexend-SemiBold";
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: bold;
   width: auto;
   background-color: #FFA54B;
@@ -265,7 +273,6 @@ footer img {
 .ES_intro {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .ES_intro .ES {
   border-radius: 1.5rem;
@@ -352,18 +359,16 @@ footer img {
     padding-left: 5rem;
   }
   body header .desktop a {
-    font-family: "Lexend-Regular";
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding: 1.5rem 0.5rem 0 0.5rem;
-    color: #F2F2F2;
     font-size: 2rem;
+    color: #F2F2F2;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    font-family: "Elsie_Swash_Caps";
+    font-size: 2.5rem;
   }
   body header .desktop a:hover {
     color: #FFA54B;
@@ -412,6 +417,7 @@ footer img {
   }
   body header .desktop .menu ul li a {
     font-size: 2rem;
+    color: #F2F2F2;
     margin: 0;
     padding: 0;
     display: flex;
@@ -419,10 +425,6 @@ footer img {
     align-items: center;
     text-decoration: none;
     font-family: "Lexend-Regular";
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding: 1.5rem 0.5rem 0 0.5rem;
-    color: #F2F2F2;
     font-size: 1.5rem;
     padding: 0 1rem;
     margin: 0;

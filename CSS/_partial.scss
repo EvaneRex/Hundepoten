@@ -5,10 +5,20 @@ $white: #F2F2F2;
 $CTA: #FFA54B;
 $link1: #9EF0FF;
 $link2: #EAC9FF;
+$heading:"Inria_Serif";
 $txt: "Lexend-Regular";
 $txt_bold:"Lexend-SemiBold";
+$logotxt:"Elsie_Swash_Caps";
 
 
+@font-face {
+    font-family: 'Elsie_Swash_Caps';
+    src: url(/fonts/Elsie_Swash_Caps/ElsieSwashCaps-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inria_Serif';
+    src: url(/fonts/Inria_Serif/InriaSerif-Regular.ttf);
+}
 
 @font-face {
     font-family: 'Lexend-Regular';
@@ -38,7 +48,7 @@ $txt_bold:"Lexend-SemiBold";
 
 @mixin btn {
     font-family: $txt_bold;
-    font-size: 1.25rem;
+    font-size: 1.40rem;
     font-weight: bold;
     width: auto;
     background-color: $CTA;
@@ -83,7 +93,7 @@ $txt_bold:"Lexend-SemiBold";
 }
 
 @mixin heading ($fontsize:2rem){
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $heading;
     font-size: $fontsize;
     padding: 1rem 0.5rem 0 0.5rem;
     color: $white;
@@ -98,12 +108,14 @@ $txt_bold:"Lexend-SemiBold";
 
 @mixin nav_txt($fontsize:2rem){
     font-size: $fontsize;
+    color: $white;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+
     
         &:hover{
             color: $CTA;
