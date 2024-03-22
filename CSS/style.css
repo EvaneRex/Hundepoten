@@ -355,7 +355,7 @@ footer img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 5rem;
+    padding-right: 4rem;
     padding-left: 5rem;
   }
   body header .desktop a {
@@ -382,10 +382,14 @@ footer img {
     display: inline-flex;
     align-items: center;
   }
-  body header .desktop div form {
+  body header .desktop div .search {
+    position: relative;
+    display: inline-block;
+  }
+  body header .desktop div .search form {
     margin: auto 1rem;
   }
-  body header .desktop div form input[type=search] {
+  body header .desktop div .search form input[type=search] {
     font-family: "Lexend-Regular";
     font-size: 1.2rem;
     line-height: 2rem;
@@ -394,11 +398,11 @@ footer img {
     font-size: 1rem;
     background-color: #F2F2F2;
     color: #1F3939;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 1rem 0.2rem 3rem;
     border-radius: 1.5rem;
     width: 15rem;
   }
-  body header .desktop div form .visually-hidden {
+  body header .desktop div .search form .visually-hidden {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -408,6 +412,15 @@ footer img {
     clip: rect(0, 0, 0, 0) !important;
     white-space: nowrap !important;
     border: 0 !important;
+  }
+  body header .desktop div .search img {
+    position: absolute;
+    top: 22%;
+    right: 8px;
+    transform: translateY(40%);
+    transform: translateX(-800%);
+    width: 1.5rem;
+    height: auto;
   }
   body header .desktop .menu ul {
     list-style: none;
