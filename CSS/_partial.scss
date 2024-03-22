@@ -123,7 +123,7 @@ $logotxt:"Elsie_Swash_Caps";
         }
 }
 
-@mixin link ($line-height:2rem,$fontsize:1.25rem){
+@mixin link ($line-height:2rem,$fontsize:1.2rem){
     font-family: $txt;
     font-size: $fontsize;
     line-height: $line-height;
