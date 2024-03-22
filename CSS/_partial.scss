@@ -98,7 +98,7 @@ $logotxt:"Elsie_Swash_Caps";
     padding: 1rem 0.5rem 1rem 0.5rem;
     color: $white;
 }
-@mixin text ($line-height:2rem, $fontsize:1.2rem, $padding: 0.5rem 0.5rem 0 0.5rem){
+@mixin text ($line-height:2rem, $fontsize:1.2rem, $padding: 1.5rem 0.5rem 0 0.5rem){
     font-family: $txt;
     font-size: $fontsize;
     line-height: $line-height;

@@ -93,7 +93,7 @@ body section p {
   font-family: "Lexend-Regular";
   font-size: 1.2rem;
   line-height: 2rem;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 1.5rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
 }
 body section p:last-of-type {
@@ -151,7 +151,7 @@ body footer ul {
   font-family: "Lexend-Regular";
   font-size: 1.2rem;
   line-height: 2rem;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 1.5rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
   padding: 0;
   text-align: center;
@@ -378,7 +378,7 @@ body footer a img {
     font-family: "Lexend-Regular";
     font-size: 1.2rem;
     line-height: 2rem;
-    padding: 0.5rem 0.5rem 0 0.5rem;
+    padding: 1.5rem 0.5rem 0 0.5rem;
     color: #F2F2F2;
     padding: 0;
     text-align: left;
@@ -470,7 +470,7 @@ body footer a img {
     font-family: "Lexend-Regular";
     font-size: 1.2rem;
     line-height: 2rem;
-    padding: 0.5rem 0.5rem 0 0.5rem;
+    padding: 1.5rem 0.5rem 0 0.5rem;
     color: #F2F2F2;
     font-size: 1rem;
     background-color: #F2F2F2;
