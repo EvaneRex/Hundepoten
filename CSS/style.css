@@ -83,7 +83,7 @@ body section {
 body section h1, body section h2, body section h3 {
   font-family: "Inria_Serif";
   font-size: 2rem;
-  padding: 1rem 0.5rem 0 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
   color: #F2F2F2;
 }
 body section h2, body section h3 {
@@ -93,11 +93,11 @@ body section p {
   font-family: "Lexend-Regular";
   font-size: 1.2rem;
   line-height: 2rem;
-  padding: 1.5rem 0.5rem 0 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
 }
 body section p:last-of-type {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 body section .btn {
   text-decoration: none;
@@ -151,7 +151,7 @@ body footer ul {
   font-family: "Lexend-Regular";
   font-size: 1.2rem;
   line-height: 2rem;
-  padding: 1.5rem 0.5rem 0 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
   padding: 0;
   text-align: center;
@@ -378,7 +378,7 @@ body footer a img {
     font-family: "Lexend-Regular";
     font-size: 1.2rem;
     line-height: 2rem;
-    padding: 1.5rem 0.5rem 0 0.5rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
     color: #F2F2F2;
     padding: 0;
     text-align: left;
@@ -470,7 +470,7 @@ body footer a img {
     font-family: "Lexend-Regular";
     font-size: 1.2rem;
     line-height: 2rem;
-    padding: 1.5rem 0.5rem 0 0.5rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
     color: #F2F2F2;
     font-size: 1rem;
     background-color: #F2F2F2;
