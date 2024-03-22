@@ -381,6 +381,8 @@ body footer a img {
     padding: 1.5rem 0.5rem 0 0.5rem;
     color: #F2F2F2;
     padding: 0;
+    text-align: left;
+    padding-left: 5rem;
   }
   body footer ul li {
     line-height: 2.5rem;
@@ -583,6 +585,9 @@ body footer a img {
     grid-template-rows: 1fr;
     padding: 2rem 5rem 2rem 5rem;
     align-content: center;
+  }
+  body footer ul {
+    text-align: left;
   }
   body footer ul:first-of-type {
     grid-column: 1;

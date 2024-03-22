@@ -321,6 +321,8 @@ body{
                     list-style-type: none;
                     @include partial.text;
                     padding: 0;
+                    text-align: left;
+                    padding-left: 5rem;
                     
     
                     li{
@@ -537,6 +539,9 @@ body{
             padding: 2rem 5rem 2rem 5rem;
             align-content: center;
 
+                ul{
+                    text-align: left;
+                }
 
                 ul:first-of-type{
                     grid-column: 1;
@@ -547,6 +552,7 @@ body{
                     grid-row: 1;
                     align-content: center;
                     justify-self: center;
+
                 }
                 a{
                     align-self: center;
