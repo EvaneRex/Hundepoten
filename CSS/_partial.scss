@@ -5,6 +5,20 @@ $white: #F2F2F2;
 $CTA: #FFA54B;
 $link1: #9EF0FF;
 $link2: #EAC9FF;
+$txt: "Lexend-Regular";
+$txt_bold:"Lexend-SemiBold";
+
+
+
+@font-face {
+    font-family: 'Lexend-Regular';
+    src: url(/fonts/Lexend/Lexend-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lexend-SemiBold';
+    src: url(/fonts/Lexend/Lexend-SemiBold.ttf);
+}
+
 
 
 /*Mixins*/
@@ -23,7 +37,7 @@ $link2: #EAC9FF;
 }
 
 @mixin btn {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $txt_bold;
     font-size: 1.25rem;
     font-weight: bold;
     width: auto;
@@ -75,7 +89,7 @@ $link2: #EAC9FF;
     color: $white;
 }
 @mixin text ($line-height:2rem, $fontsize:1.2rem, $padding: 1.5rem 0.5rem 0 0.5rem){
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $txt;
     font-size: $fontsize;
     line-height: $line-height;
     padding: $padding;
@@ -98,7 +112,7 @@ $link2: #EAC9FF;
 }
 
 @mixin link ($line-height:2rem,$fontsize:1.25rem){
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $txt;
     font-size: $fontsize;
     line-height: $line-height;
     color: $link1;

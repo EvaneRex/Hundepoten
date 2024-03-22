@@ -138,7 +138,7 @@ body{
             .ref{
                 color: partial.$white;
                 font-size: 0.8rem;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: partial.$txt;
                 text-align: center;
             }
         }       
@@ -201,7 +201,7 @@ body{
             .ref{
                 color: partial.$white;
                 font-size: 0.8rem;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: partial.$txt;
                 text-align: center;
                 margin-left: 0.5rem;
             }

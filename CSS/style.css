@@ -1,5 +1,13 @@
 @charset "UTF-8";
 /*Variables*/
+@font-face {
+  font-family: "Lexend-Regular";
+  src: url(/fonts/Lexend/Lexend-Regular.ttf);
+}
+@font-face {
+  font-family: "Lexend-SemiBold";
+  src: url(/fonts/Lexend/Lexend-SemiBold.ttf);
+}
 /*Mixins*/
 * {
   margin: 0;
@@ -75,7 +83,7 @@ section h2, section h3 {
   font-size: 1.75rem;
 }
 section p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lexend-Regular";
   font-size: 1.2rem;
   line-height: 2rem;
   padding: 1.5rem 0.5rem 0 0.5rem;
@@ -86,7 +94,7 @@ section p:last-of-type {
 }
 section .btn {
   text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lexend-SemiBold";
   font-size: 1.25rem;
   font-weight: bold;
   width: auto;
@@ -104,7 +112,7 @@ section .btn:hover {
   text-decoration: none;
 }
 section a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lexend-Regular";
   font-size: 1.25rem;
   line-height: 2rem;
   color: #9EF0FF;
@@ -131,7 +139,7 @@ footer {
 }
 footer ul {
   list-style-type: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lexend-Regular";
   font-size: 1.2rem;
   line-height: 2rem;
   padding: 1.5rem 0.5rem 0 0.5rem;
@@ -143,7 +151,7 @@ footer ul li {
   line-height: 2.5rem;
 }
 footer ul li a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lexend-Regular";
   font-size: 1.25rem;
   line-height: 2rem;
   color: #9EF0FF;
@@ -185,7 +193,7 @@ footer img {
 .intro .intro_img .ref {
   color: #F2F2F2;
   font-size: 0.8rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lexend-Regular";
   text-align: center;
 }
 .intro .intro_txt {
@@ -212,7 +220,7 @@ footer img {
   font-weight: lighter;
 }
 .oversigt .a-j ul li a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lexend-Regular";
   font-size: 1.25rem;
   line-height: 2rem;
   color: #9EF0FF;
@@ -248,7 +256,7 @@ footer img {
 .Guide .guide_img .ref {
   color: #F2F2F2;
   font-size: 0.8rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lexend-Regular";
   text-align: center;
   margin-left: 0.5rem;
 }
@@ -344,7 +352,7 @@ footer img {
     padding-left: 5rem;
   }
   body header .desktop a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Lexend-Regular";
     font-size: 1.2rem;
     line-height: 2rem;
     padding: 1.5rem 0.5rem 0 0.5rem;
@@ -373,7 +381,7 @@ footer img {
     margin: auto 1rem;
   }
   body header .desktop div form input[type=search] {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Lexend-Regular";
     font-size: 1.2rem;
     line-height: 2rem;
     padding: 1.5rem 0.5rem 0 0.5rem;
@@ -410,7 +418,7 @@ footer img {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Lexend-Regular";
     font-size: 1.2rem;
     line-height: 2rem;
     padding: 1.5rem 0.5rem 0 0.5rem;
