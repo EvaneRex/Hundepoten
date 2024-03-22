@@ -338,6 +338,21 @@ body footer a img {
   height: 3.2rem;
 }
 
+/*---------------Støt dyrene---------------*/
+.stoet {
+  list-style: none;
+}
+.stoet li:first-of-type {
+  font-family: "Lexend-Regular";
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 1.5rem 0.5rem 0 0.5rem;
+  color: #F2F2F2;
+}
+.stoet li a {
+  margin-left: 0.5rem;
+}
+
 /*-------------------------------Media querry----------------------------------*/
 @media screen and (min-width: 700px) and (max-width: 1024px) {
   body header .mobil img {

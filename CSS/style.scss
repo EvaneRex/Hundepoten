@@ -276,7 +276,19 @@ body{
                 }  
         }
 }
+/*---------------Støt dyrene---------------*/
+.stoet{
+    list-style: none;
 
+        li:first-of-type{
+            @include partial.text;
+        }
+        li{
+            a{
+                margin-left: 0.5rem;
+            }
+        }
+}
 
 /*-------------------------------Media querry----------------------------------*/
 @media screen and (min-width:700px) and (max-width:1024px) {
