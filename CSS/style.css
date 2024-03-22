@@ -83,7 +83,7 @@ body section {
 body section h1, body section h2, body section h3 {
   font-family: "Inria_Serif";
   font-size: 2rem;
-  padding: 1rem 0.5rem 1rem 0.5rem;
+  padding: 1rem 0.5rem 0 0.5rem;
   color: #F2F2F2;
 }
 body section h2, body section h3 {
