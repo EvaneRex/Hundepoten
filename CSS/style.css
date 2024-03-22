@@ -31,6 +31,52 @@ body {
   /*---------------------Section + link------------------*/
   /*---------------------Footer------------------*/
 }
+body .dropdown {
+  list-style: none;
+}
+body .dropdown li {
+  display: block;
+  position: relative;
+}
+body .dropdown li:hover ul {
+  display: block;
+}
+body .dropdown li .b_toggle img {
+  width: 2.2rem;
+  height: 2.5rem;
+}
+body .dropdown li ul {
+  position: absolute;
+  z-index: 999;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: auto;
+  padding: 1rem 1rem;
+}
+body .dropdown li ul li {
+  display: block;
+}
+body .dropdown li ul li a {
+  font-size: 2rem;
+  color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Lexend-Regular";
+  font-size: 1.2rem;
+  justify-content: left;
+}
+body .dropdown li ul li a:hover {
+  color: #FFA54B;
+  transition: ease-in-out 0.3s;
+}
+body .dropdown li ul li a:hover {
+  background-color: #1F3939;
+}
 body header {
   position: sticky;
   top: 0;
