@@ -9,56 +9,6 @@
 body{
     @include partial.body;
 
-    .dropdown{
-        list-style: none;
-        
-        
-            li{
-                display: block;
-                position: relative;
-
-                &:hover ul{
-                    display: block;
-                }
-
-                .b_toggle{                    
-                    img{
-                        width: 2.2rem;
-                        height: 2.5rem;
-                    }
-                }
-
-                    ul{
-                        position: absolute;
-                        z-index: 999;
-                        display: none;
-                        top: 100%;
-                        left: 0;
-                        width: auto;
-                        padding: 1rem 1rem;
-
-                        li{
-                            display: block;
-
-                            
-                            a{
-                                
-                                @include partial.nav_txt;
-                                font-family: partial.$txt;
-                                font-size: 1.2rem;
-                                justify-content: left;
-                                
-                                    &:hover{
-                                        background-color: partial.$bgcolor;
-                                    }
-                                
-                                
-                            }
-                        }
-                    }
-        }
-
-    }
     /*---------------------Header + nav styling------------------*/
         header{
             position: sticky;
@@ -74,12 +24,64 @@ body{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                position: relative;
                 
+                .dropdown{
+                    list-style: none;                    
+                    
+                        li{
+                            display: block;
+                            
+            
+                            &:hover ul{
+                                display: block;
+                                transition: ease-in 0.25s;
+                            }
+            
+                            .b_toggle{                    
+                                img{
+                                    width: 2.2rem;
+                                    height: 2.5rem;
+                                }
+                            }
+            
+                                ul{
+                                    position: absolute;
+                                    z-index: 999;
+                                    display: none;
+                                    top: 100%;
+                                    left: 0;
+                                    @include partial.dropdown;
+                                   
+                                    li{
+                                        display: block;
+
+                                            a{
+                                                
+                                                @include partial.nav_txt;
+                                                font-family: partial.$txt;
+                                                font-size: 1.2rem;
+                                                justify-content: left;
+                                                line-height: 2rem;
+                                                
+                                                    &:hover{
+                                                        background-color: partial.$bgcolor;
+                                                    }
+                                                
+                                                
+                                            }
+                                    }
+                                }
+                    }
+            
+                }
+                  
+                a{
                     img{
                         width: 2.2rem;
                         height: 2.5rem;
                     }
-                    
+                }
                 }
             }
 
